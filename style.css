@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #111;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.nav-links a:hover {
+    color: #00b7ff;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #007bff, #11c2d3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.hero button {
+    padding: 12px 25px;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero button:hover {
+    background: #e3e3e3;
+}
+
+/* SEÇÕES */
+.section {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.dark {
+    background: #222;
+    color: white;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.dark .card {
+    background: #333;
+}
+
+/* FORMULÁRIO */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 120px;
+}
+
+button[type="submit"] {
+    padding: 12px 25px;
+    background: #007bff;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #005fcc;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.msg-sucesso {
+    color: green;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 750px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+}

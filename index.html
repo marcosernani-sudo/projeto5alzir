@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Completo na AWS</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">AWS WebApp</div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <h1>Aplicação Web Completa Publicada na AWS Amplify 🚀</h1>
+        <p>Este é um exemplo moderno com HTML, CSS e JavaScript, totalmente pronto para deploy.</p>
+        <button onclick="scrollToSection('sobre')">Saiba Mais</button>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+        <h2>Sobre o Projeto</h2>
+        <p>
+            Esta aplicação é um exemplo completo criado para demonstrar como publicar um site moderno na AWS.
+            A página inclui design responsivo, menu fixo, animações e JavaScript funcional.
+        </p>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section dark">
+        <h2>Nossos Serviços</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Desenvolvimento Web</h3>
+                <p>Sites modernos, responsivos e rápidos.</p>
+            </div>
+            <div class="card">
+                <h3>Cloud Computing</h3>
+                <p>Deploy em AWS, Azure, GCP e OCI.</p>
+            </div>
+            <div class="card">
+                <h3>Automação</h3>
+                <p>Integrações e processos automatizados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+        <h2>Fale Conosco</h2>
+        <form onsubmit="sendMessage(event)">
+            <div class="form-group">
+                <input type="text" id="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Seu email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="mensagem" placeholder="Mensagem" required></textarea>
+            </div>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+        <p id="msg-sucesso" class="msg-sucesso"></p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 - Aplicação Web na AWS | Criado com HTML, CSS e JS</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
